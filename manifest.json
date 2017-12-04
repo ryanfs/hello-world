@@ -1,14 +1,15 @@
 {
-  "name": "Example Gmail Extension",
-  "description": "Example extension showing use of the Streak Gmail SDK",
-  "version": "0.1",
+  "name": "ProcessPure",
+  "description": "Shorten your sales cycle by managing your opportunities with ProcessPure.",
+  "version": "0.01",
   "content_scripts": [
     {
       "matches": [
         "https://mail.google.com/*",
         "https://inbox.google.com/*"
       ],
-      "js": ["inboxsdk.js","content.js"],
+      "js": ["inboxsdk.js","content.js","jquery.js"],
+      "css": ["styles.css"],
       "run_at": "document_end"
     }
   ],
