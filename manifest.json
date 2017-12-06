@@ -1,7 +1,7 @@
 {
   "name": "ProcessPure",
   "description": "Shorten your sales cycle by managing your opportunities with ProcessPure.",
-  "version": "0.01",
+  "version": "0.02",
   "content_scripts": [
     {
       "matches": [
@@ -16,6 +16,9 @@
   "permissions": [
     "https://mail.google.com/",
     "https://inbox.google.com/"
+  ],
+  "web_accessible_resources": [
+      "iframe.html"
   ],
   "manifest_version": 2
 }

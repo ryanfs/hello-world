@@ -6,3 +6,10 @@
   text-decoration: none;
   color: #499aff;
 }
+
+iframe {
+  border: none;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
