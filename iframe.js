@@ -7,18 +7,18 @@ function main() {
   var iframe = document.createElement('iframe');
 
   iframe.onload = function() {
-    iframe.contentWindow.postMessage("greeting", 'https://processpure.herokuapp.com');
+    iframe.contentWindow.postMessage("greeting", 'https://app.processpure.co');
   };
 
   window.addEventListener('message', function(event) {
     //verify message is from an origin we trust
-    if (event.data === 'close' && event.origin === 'https://processpure.herokuapp.com') {
+    if (event.data === 'close' && event.origin === 'https://app.processpure.co') {
       // The remote iframe said to close, so relay that upwards.
       window.parent.postMessage('close', parentOrigin);
     }
   }, false);
 
-  iframe.src = 'https://processpure.herokuapp.com/home'; //set the url of the remote iframe here
+  iframe.src = 'https://app.processpure.co/home'; //set the url of the remote iframe here
   iframe.style.width = "370px"; //other iframe options
   iframe.style.height = "280px";
   iframe.seamless= 'seamless';
