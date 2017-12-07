@@ -18,7 +18,7 @@ function main() {
     }
   }, false);
 
-  iframe.src = 'https://app.processpure.co/home'; //set the url of the remote iframe here
+  iframe.src = 'https://app.processpure.co/home?iframe=true'; //set the url of the remote iframe here
   iframe.style.width = "370px"; //other iframe options
   iframe.style.height = "280px";
   iframe.seamless= 'seamless';
